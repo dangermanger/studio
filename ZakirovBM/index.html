@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>canvas</title>
+  <meta charset="utf-8">
+
+  <canvas id="smile" width="600" height="600">
+    <p></p>
+  </canvas>
+
+<script type="text/javascript">
+    var myCanvas = document.getElementById('smile');
+
+     var cxt = myCanvas.getContext('2d');
+     
+ cxt.strokeStyle = 'blue';
+	cxt.moveTo(100,100);
+	cxt.lineTo(100,200);;
+	cxt.stroke();
+ cxt.strokeStyle = 'blue';
+
+        cxt.moveTo(120,100);
+        cxt.lineTo(120,200);
+        cxt.stroke();
+cxt.beginPath();
+cxt.strokeStyle = 'Lime'; 
+cxt.lineWidth = 5;
+cxt.arc(110, 100, 90, 0, Math.PI, true);
+cxt.closePath();
+cxt.fillStyle = 'Orchid';
+cxt.fill();
+cxt.stroke();
+
+cxt.strokeStyle = 'blue'; 
+cxt.lineWidth = 2;
+cxt.beginPath();
+cxt.moveTo(100,200);
+cxt.quadraticCurveTo(110, 220, 120, 200);
+
+cxt.stroke();
+
+cxt.beginPath();
+cxt.scale(1,0.9)
+cxt.strokestyle = 'Lime'; 
+cxt.lineWidth = 1;
+cxt.arc(60, 60, 8, 0, Math.PI*2, true);
+cxt.fillStyle = 'black';
+cxt.fill();
+cxt.closePath();
+cxt.stroke();
+
+cxt.beginPath();
+cxt.strokestyle = 'Lime'; 
+cxt.lineWidth = 1;
+cxt.arc(90, 40, 8, 0, Math.PI*2, false);
+cxt.fillStyle = 'black';
+cxt.fill();
+cxt.closePath();
+cxt.stroke();
+
+cxt.beginPath();
+cxt.strokestyle = 'Lime'; 
+cxt.lineWidth = 1;
+cxt.arc(110, 70, 8, 0, Math.PI*2, false);
+cxt.fillStyle = 'black';
+cxt.fill();
+cxt.closePath();
+cxt.stroke();
+
+cxt.beginPath();
+cxt.strokestyle = 'Lime'; 
+cxt.lineWidth = 1;
+cxt.arc(140, 40, 8, 0, Math.PI*2, false);
+cxt.fillStyle = 'black';
+cxt.fill();
+cxt.closePath();
+cxt.stroke();
+
+
+
+
+  </script>
+ </head>
+ </body>
+</html>
+
