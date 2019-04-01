@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Р”РѕРєСѓРјРµРЅС‚ Р±РµР· РЅР°Р·РІР°РЅРёСЏ</title>
+
+</head>
+<body>
+<canvas id='circles_demo'></canvas>
+
+<script>
+  var canvas = document.getElementById("circles_demo");
+  var context = canvas.getContext('2d');
+  canvas.height = 1800;
+  canvas.width = 900;
+    
+  function drawCircle(xPos, yPos, radius, lineColor, fillColor)
+  {
+    var startAngle = 0 * (Math.PI/180);
+    var endAngle = 360 * (Math.PI/180);
+    var radius = radius;
+    context.strokeStyle = lineColor;
+    context.fillStyle = fillColor;
+    context.lineWidth = 8;
+    context.beginPath();
+    context.arc(xPos, yPos, radius, startAngle, endAngle, false);
+    context.fill();
+    context.stroke();
+	  
+  }
+	370
+  drawCircle(350, 350, 110, "black", "white");
+	drawCircle(350, 185, 60, "black", "white");
+	drawCircle(350,600, 150, "black", "white");
+	drawCircle(325, 170, 7, "black", "black");
+	drawCircle(370, 170, 7, "black", "black");
+	
+	
+	</script>
+	<script>
+  var canvas = document.getElementById("circles_demo");
+  var context = canvas.getContext('2d');
+  
+  
+  function drawArc(xPos, yPos, radius, startAngle, endAngle, anticlockwise, lineColor, fillColor)
+  {
+    var startAngle = startAngle * (Math.PI/180);
+    var endAngle = endAngle * (Math.PI/180);
+    var radius = radius;
+    context.strokeStyle = lineColor;
+    context.fillStyle = fillColor;
+    context.lineWidth = 8;
+    context.beginPath();
+    context.arc(xPos, yPos, radius, startAngle, endAngle, anticlockwise);
+    context.fill();
+    context.stroke();
+  }
+  
+  drawArc(350, 200, 25, 0, 0, false, "black", "yellow");
+  
+</script>
+	<script>
+            var canvas = document.getElementById("circles_demo"), 
+                context = canvas.getContext("2d");
+            context.beginPath();
+context.moveTo(290, 140);
+context.lineTo(410, 140);
+context.lineTo(390, 20);
+context.lineTo(310, 20);
+context.closePath();
+context.strokeStyle = "black";
+		context.fillStyle = "black";
+		context.fill();
+context.stroke();
+        </script>
+	<script>
+            var canvas = document.getElementById("circles_demo"), 
+                context = canvas.getContext("2d");
+            context.beginPath();
+		400
+context.moveTo(260, 290);
+context.lineTo(100, 400);
+context.closePath();
+context.strokeStyle = "black";
+context.stroke();
+	</script>
+	<script>
+            var canvas = document.getElementById("circles_demo"), 
+                context = canvas.getContext("2d");
+            context.beginPath();
+		
+context.moveTo(440, 290);
+context.lineTo(650, 350);
+context.closePath();
+context.strokeStyle = "black";
+context.stroke();
+		
+        </script>
+	<script>
+            var canvas = document.getElementById("circles_demo"), 
+                context = canvas.getContext("2d");
+            context.beginPath();
+context.moveTo(550, 700);
+context.lineTo(700, 170);
+context.closePath();
+context.strokeStyle = "black";
+context.stroke();
+        </script>
+	<script>
+            var canvas = document.getElementById("circles_demo"), 
+                context = canvas.getContext("2d");
+            context.beginPath();
+context.moveTo(700, 170);
+context.lineTo(600, 50);
+context.closePath();
+context.strokeStyle = "black";
+context.stroke();
+		750
+		context.beginPath();
+context.moveTo(700, 170);
+context.lineTo(750, 50);
+context.closePath();
+context.strokeStyle = "black";
+context.stroke();
+		context.beginPath();
+context.moveTo(700, 170);
+context.lineTo(700, 40);
+context.closePath();
+context.strokeStyle = "black";
+context.stroke();
+		context.beginPath();
+context.moveTo(700, 170);
+context.lineTo(820, 60);
+context.closePath();
+context.strokeStyle = "black";
+context.stroke();
+		context.beginPath();
+context.moveTo(700, 170);
+context.lineTo(650, 40);
+context.closePath();
+context.strokeStyle = "black";
+context.stroke();
+		context.beginPath();
+context.moveTo(345, 190);
+context.lineTo(370, 200);
+context.closePath();
+context.strokeStyle = "black";
+context.stroke();
+		370
+        </script>
+	<script>
+	var canvas = document.getElementById("circles_demo"), 
+                context = canvas.getContext("2d");
+		context.beginPath();
+context.arc(350,200,30,0,1*Math.PI);
+context.stroke();
+		
+		
+	</script>
+	
+
+
+		
+		
+
+	
+	
+	
+</body>
+</html>
